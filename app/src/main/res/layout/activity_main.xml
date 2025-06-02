@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+
+    <com.example.canvas.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:background="#FFFFFF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="Chọn màu:"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/btnBlack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/black"
+                android:importantForAccessibility="no" />
+
+            <Button
+                android:id="@+id/btnRed"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/red"
+                android:importantForAccessibility="no" />
+
+            <Button
+                android:id="@+id/btnBlue"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="8dp"
+                android:backgroundTint="@color/blue"
+                android:importantForAccessibility="no"
+                />
+
+            <Button
+                android:id="@+id/btnYellow"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/yellow"
+                android:layout_margin="8dp"
+                android:importantForAccessibility="no"
+                />
+
+            <Button
+                android:id="@+id/btnGreen"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/green"
+                android:layout_margin="8dp"
+                android:importantForAccessibility="no"
+                />
+
+            <Button
+                android:id="@+id/btnPink"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:backgroundTint="@color/pink"
+                android:layout_margin="8dp"
+                android:importantForAccessibility="no"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Độ dày:"
+            android:layout_marginLeft="10dp"/>
+
+        <Button android:id="@+id/btnThin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nhạt"/>
+
+        <Button
+            android:id="@+id/btnMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Vừa"/>
+
+
+        <Button android:id="@+id/btnThick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Đậm"/>
+
+
+    </LinearLayout>
+
+    <Button android:id="@+id/btnClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xóa"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>
